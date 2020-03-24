@@ -44,7 +44,7 @@ resource "aws_instance" "aviatrixcontroller" {
 
   lifecycle {
     ignore_changes = [
-      "ami"
+      "ami","ebs_optimized","network_interface"
     ]
   }
 }
