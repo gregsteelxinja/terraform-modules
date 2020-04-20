@@ -43,7 +43,7 @@ resource aws_instance aviatrixcontroller {
 
   lifecycle {
     ignore_changes = [
-      ami,ebs_optimized,network_interface"
+      ami,ebs_optimized,network_interface
     ]
   }
 }
